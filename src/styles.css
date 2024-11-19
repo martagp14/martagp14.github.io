@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    /* --color-main-pinkish: #fce0f0; */
+    --color-main-pinkish: #f8e0f0;
+    /* --color-main-blueish: #d7e7fc; */
+    --color-main-blueish: #dde3f9;
+    --color-purpleish: #ced0e5;
+    --color-grey: #d0d0d0;
+    --color-black: #0d0d0d;
+
+}
+
+#background-style{
+    background-image: radial-gradient( var(--color-main-pinkish), var(--color-main-blueish));
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+body{
+  margin: 1%;
+
+}
+
