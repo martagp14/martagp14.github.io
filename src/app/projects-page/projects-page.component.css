@@ -1,0 +1,59 @@
+/* Container for the project list (using grid) */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid with responsive columns */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for each project window */
+  .project-window {
+    background: #f0f0f0; /* Light background color for the window */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to give it a lifted look */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Window header */
+  .window-header {
+    background-color: #4A90E2; /* Blue color for the title bar */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  /* Title in the window header */
+  .window-title {
+    font-size: 1.1em;
+  }
+  
+  /* Close button (×) */
+  .close-btn {
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  /* Styling for the window content */
+  .window-content {
+    padding: 15px;
+    background-color: white;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .window-content p {
+    margin: 0;
+  }
+  
+  /* Make sure the layout is responsive */
+  @media (max-width: 768px) {
+    .project-list {
+      grid-template-columns: 1fr; /* Stacks the windows on smaller screens */
+    }
+  }
+  

@@ -8,19 +8,46 @@
     --color-purpleish: #ced0e5;
     --color-grey: #d0d0d0;
     --color-black: #0d0d0d;
+    --color-dark-transparent:#0000000c;
 
 }
 
-#background-style{
+/* #background-style{
     background-image: radial-gradient( var(--color-main-pinkish), var(--color-main-blueish));
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
     height: 100%;
-}
+} */
 
-body{
+/* body{
   margin: 1%;
 
+} */
+
+body {
+  background: 
+    repeating-linear-gradient(-45deg, 
+      var(--color-dark-transparent) 0px, 
+      var(--color-dark-transparent) 8px, /* First line width */
+      transparent 8px, 
+      transparent 88px), 
+    repeating-linear-gradient(-45deg, 
+      var(--color-dark-transparent) 12px, 
+      var(--color-dark-transparent) 32px, /* First line width */
+      transparent 32px, 
+      transparent 100px),
+    repeating-linear-gradient(-45deg, 
+      var(--color-dark-transparent) 15px, 
+      var(--color-dark-transparent) 19px, /* First line width */
+      transparent 19px, 
+      transparent 201px),
+
+  radial-gradient(var(--color-main-pinkish), var(--color-main-blueish)); /* Your radial gradient */
+  background-repeat: repeat, repeat; /* Ensure both gradients repeat */
+  background-position: center center, center center; /* Ensure correct positioning */
+  background-attachment: fixed;
+  height: 100%;
+  background-color: #f0f0f0; /* Add a solid background color for testing */
 }
 
