@@ -9,23 +9,11 @@
     --color-grey: #d0d0d0;
     --color-black: #0d0d0d;
     --color-dark-transparent:#0000000c;
-
+    --color-dark-purple : #a390bd;
 }
 
-/* #background-style{
-    background-image: radial-gradient( var(--color-main-pinkish), var(--color-main-blueish));
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
-    height: 100%;
-} */
-
-/* body{
-  margin: 1%;
-
-} */
-
 body {
+  margin: 1%;
   background: 
     repeating-linear-gradient(-45deg, 
       var(--color-dark-transparent) 0px, 
