@@ -3,6 +3,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutMePageComponent } from './about-me-page/about-me-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { PlaygroundComponent } from './playground/playground.component';
 
 export const routes: Routes = [
     {
@@ -16,6 +17,10 @@ export const routes: Routes = [
     {
         path:'projects',
         component:ProjectsPageComponent
+    },
+    {
+        path:'playground',
+        component:PlaygroundComponent
     },
     {
         path:'',

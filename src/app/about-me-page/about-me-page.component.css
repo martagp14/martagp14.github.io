@@ -1,0 +1,44 @@
+.speech-bubble {
+    position: relative;
+    background: var(--color-main-pinkish); /* Color pastel morado */
+    border: 3px solid var(--color-black); /* Borde oscuro */
+    border-radius: 15px;
+    padding: 15px;
+    color: var(--color-black);
+    max-width: 90%; /* Asegura que se ajuste en dispositivos móviles */
+    margin: 0 auto;
+    /* font-family: 'Comic Sans MS', sans-serif; Estilo cómic */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombras */
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Apunta hacia abajo */
+    left: 20px; /* Ajusta para centrar */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #e6e0f8; /* Igual al fondo */
+    border-bottom: 0;
+    margin-left: -10px;
+}
+
+.speech-bubble:before {
+    content: '';
+    position: absolute;
+    bottom: -22px; /* Sombra para la colita */
+    left: 19px; /* Ajusta para alinear */
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: var(--color-black); /* Igual al borde */
+    border-bottom: 0;
+    margin-left: -11px;
+}
+
+a{
+    color: #9b59b6; 
+    text-decoration: none; 
+    display: inline;
+}
