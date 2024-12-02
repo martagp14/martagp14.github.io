@@ -1,21 +1,13 @@
 <div class="project-list">
-    <div class="project-window">
-        <div class="window-header">
-        <span class="window-title">Project 1</span>
-        <span class="close-btn">X</span>
-        </div>
-        <div class="window-content">
-        <p>Details about Project 1</p>
-        </div>
-    </div>
-    <div class="project-window">
-        <div class="window-header">
-        <span class="window-title">Project 2</span>
-        <span class="close-btn">X</span>
-        </div>
-        <div class="window-content">
-        <p>Details about Project 2</p>
+    <div *ngFor="let project of projects" >
+        <div class="project-window">
+            <div class="window-header">
+                <span class="window-title">{{project.title}}</span>
+                <span class="close-btn">X</span>
+            </div>
+                <div class="window-content">
+                <p>{{project.description}}</p>
+            </div>
         </div>
     </div>
-    <!-- More project windows here -->
 </div>
