@@ -1,12 +1,14 @@
 <div class="project-list">
     <div *ngFor="let project of projects" >
         <div class="project-window">
-            <div class="window-header">
+            <div class="close-btn2 window-header" (click)="openDialog(project)">
                 <span class="window-title">{{project.title}}</span>
-                <span class="close-btn">X</span>
+                <div class="close-btn"><mat-icon class="icon" fontIcon="zoom_in"></mat-icon></div>
+                
             </div>
-                <div class="window-content">
+            <div class="window-content">
                 <p>{{project.description}}</p>
+                <button mat-button (click)="openDialog(project)">Open dialog</button>            
             </div>
         </div>
     </div>

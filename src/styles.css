@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 :root{
     /* --color-main-pinkish: #fce0f0; */
     --color-main-pinkish: #f8e0f0;
