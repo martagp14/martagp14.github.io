@@ -21,6 +21,7 @@
   background-color: #4a0072; /* Un morado más oscuro */
 }
 
+/*For loading holder*/
 .my-overlay {
   left: 0 !important;
   top: 0 !important;
@@ -65,3 +66,4 @@
     background-position: left
   }
 }
+

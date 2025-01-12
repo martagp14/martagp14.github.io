@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    height: 100vh;  /* Ensure the body takes the full height of the screen */
+    overflow: hidden;  /* Hide the overflow when the character moves out of bounds */
+    position: relative;  /* Set relative positioning for the body to be the reference point for absolute positioning */
+  }
+
+  #character {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute; /* Positioning based on the body element */
+    top: 50%;  /* Start in the center of the screen */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the character */
+  }
