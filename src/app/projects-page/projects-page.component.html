@@ -7,7 +7,7 @@
                 
             </div>
             <div class="window-content">
-                <p>{{project.description}}</p>
+                <p [innerHTML]="project.shortdescription | newline"></p>
             </div>
         </div>
     </div>

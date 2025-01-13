@@ -71,3 +71,7 @@
         grid-template-columns: 1fr; /* Stacks the windows on smaller screens */
     }
 } 
+
+.formatted-text {
+    white-space: pre-line;
+  }

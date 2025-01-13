@@ -8,12 +8,13 @@ import {
   MatDialogContent,
   MAT_DIALOG_DATA
 } from '@angular/material/dialog';
+import { NewlinePipe } from "../Pipes/newline.pipe";
 
 
 @Component({
   selector: 'app-dialog-project',
   standalone: true,
-  imports: [MatDialogContent, MatDialogClose, MatButtonModule],
+  imports: [MatDialogContent, MatDialogClose, MatButtonModule, NewlinePipe],
   templateUrl: './dialog-project.component.html',
   styleUrl: './dialog-project.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
