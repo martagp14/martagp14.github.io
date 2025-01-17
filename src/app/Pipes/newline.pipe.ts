@@ -7,7 +7,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class NewlinePipe implements PipeTransform {
   transform(value: string): string {
     var prueba = value.replace(/\n/g, '<br/>');
-    debugger
     return prueba;
   }
 }

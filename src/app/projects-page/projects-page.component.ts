@@ -29,11 +29,16 @@ export class ProjectsPageComponent {
       + '<li>	Definición de un sistema de Tiles de Unity variables.'
       + '<li>	Sistema de disparo y control de la vida de los personajes.'
       + '<li>	Sistema de recolección de tesoros y puntuación.'
-      + '<li>	Control de banda sonora.', ''),
-    new Project('Projecto 2', '', "Decripcion algoo sjkdfhajkshasdhgfaoshjas jfjhafh", ''),
-    new Project('Projecto 3', '', 'Decripcion algoo', ''),
-    new Project('Projecto 4', '', 'Decripcion algoo', ''),
-    new Project('Projecto 5', '', 'Decripcion algoo', '')
+      + '<li>	Control de banda sonora.', 
+      'Something', 
+      ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
+        'assets/ProjectsImages/GathererBombers/Imagen2.png', 
+        'assets/ProjectsImages/GathererBombers/Imagen3.png', 
+        'assets/ProjectsImages/GathererBombers/Imagen4.png']),
+    new Project('Projecto 2', '', "Decripcion algoo sjkdfhajkshasdhgfaoshjas jfjhafh", '', []),
+    new Project('Projecto 3', '', 'Decripcion algoo', '',[]),
+    new Project('Projecto 4', '', 'Decripcion algoo', '', []),
+    new Project('Projecto 5', '', 'Decripcion algoo', '', [])
 
   ];
 
@@ -48,6 +53,7 @@ export class ProjectsPageComponent {
         data: project
       },
     });
+    console.log(project.carouselImages.length);
 
     // dialogRef.afterClosed().subscribe(result => {
     //   console.log(`Dialog result: ${result}`);
