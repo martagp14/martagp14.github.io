@@ -10,9 +10,11 @@
         <p [innerHTML]="data.data.description"></p>
         <br>
         <div class="image-flex">
-          <div class="imageGrid" *ngFor="let image of data.data.carouselImages; index as i" >
-            <img class="imageGridBorder" [src]='image' (click)="openDialog(i, data.data.carouselImages)">
-            <p class="imageGridCaption">Image {{i+1}}</p>
+          <div class="polaroidGrid" *ngFor="let image of data.data.carouselImages; index as i" >
+            <img class="imageGrid" [src]='image' (click)="openDialog(i, data.data.carouselImages)">
+            <div>
+              <p class="imageGridCaption">Image {{i+1}}</p>
+            </div>
           </div>
         </div>
       </div>

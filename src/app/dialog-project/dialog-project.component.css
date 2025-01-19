@@ -45,7 +45,6 @@
 
 /* Styling for the window content */
 .window-content {
-    padding: 15px;
     font-size: 1em;
     color: #333;
 }
@@ -114,103 +113,44 @@
     }
   }
 
-/* Estilo del contenedor del carrusel */
-.carousel-item {
-  height: 50%; /* La altura será el 50% del contenedor (diálogo) */
-  display: none;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative; /* Necesario para ajustar las imágenes correctamente */
-}
-
-.carousel-item.active {
-  display: flex; /* Solo el item activo es visible */
-}
-
-/* Estilo para las imágenes del carrusel */
-.carouselphoto {
-  height: 50%; /* Ocupa toda la altura del contenedor */
-  width: auto; /* Ajusta la anchura automáticamente manteniendo el aspecto ratio */
-  object-fit: contain; /* Contiene la imagen dentro del contenedor sin recortarla */
-  border: 2vw solid var(--color-dark-purple); /* Borde de color púrpura */
-  border-bottom: 4vw solid var(--color-dark-purple); /* Borde de color púrpura */
-  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-  cursor: pointer; /* Show pointer cursor on hover */
-}
-
-/* Ajuste para el contenedor del diálogo */
-.dialog-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* El diálogo ocupa el 100% de la ventana */
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8); /* Black with opacity */
-}
-
-.modal-content {
-  background-color: #40a14d00;
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain; /* Contiene la imagen dentro del contenedor sin recortarla */
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .image-flex {
   display: flex;
   flex-wrap: wrap; /* Permitir que las imágenes se ajusten a la siguiente línea si es necesario */
   gap: 10px; /* Espacio entre las imágenes */
 }
 
-.imageGridBorder {
-  border: 1vw solid var(--color-main-blueish);
-  border-bottom: 0vw solid var(--color-main-blueish);
-}
-.imageGridCaption {
-  border: 1vw solid var(--color-main-blueish);
-  border-bottom: 1vw solid var(--color-main-blueish);
+.polaroidGrid {
   background-color: var(--color-main-blueish);
-  text-align: center;
-}
-
-.imageGrid {
   border: 0.2vw solid black;
-    width: calc(calc(100% / 3) - 10px); /* Tres imágenes por fila con espacio */
-  height: auto; /* Mantener el aspecto ratio */
+    width: calc(calc(100% / 3) - 10px);
+  min-width: 200px;
+  justify-content: center;
+  /* align-content: center; */
+  padding: 2vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.imageGrid img{
+.imageGrid{
+  height: auto; /* Mantener el aspecto ratio */
+  width: 100%;
+  /* padding: 2vh; */
+}
+
+.imageGridCaption {
+  text-align: center;
+  /* margin: auto; */
+  padding: 1.5vh;
+  vertical-align: text-bottom;  
+}
+
+/* .imageGrid img{
   width: 100%;
   height: auto;
+} */
+
+.captionGrid{
+  align-items: end;
 }
