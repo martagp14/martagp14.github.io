@@ -21,16 +21,46 @@ import { NgFor, CommonModule } from '@angular/common';
 export class DialogProjectComponent{
   data = inject(MAT_DIALOG_DATA);
 
-  openModal(image: any) {
+  imagesProject:any;
+  currectIndex:number = 0;
+
+  // openModal(image: any) {
+  openModal(index: any, carousel:any) {
     const modal = document.getElementById("imageModal") as HTMLElement;
     const modalImg = document.getElementById("modalImage") as HTMLImageElement;
-  
+    this.imagesProject = carousel;
     modal.style.display = "block";
-    modalImg.src = image; // Set the modal image source to the clicked image    
+    this.currectIndex=index;
+    console.log(carousel[index]);
+    modalImg.src = carousel[index];
+    
   }
 
   closeModal() {
     var modal = document.getElementById("imageModal") ;
     if(modal) modal.style.display = "none";
   } 
+
+  nextImg(){
+    const modal = document.getElementById("imageModal") as HTMLElement;
+    const modalImg = document.getElementById("modalImage") as HTMLImageElement;
+    this.currectIndex++;
+    this.currectIndex=this.currectIndex%this.imagesProject.length;
+    console.log(this.currectIndex);
+
+    modalImg.src = this.imagesProject[this.currectIndex]; // Set the modal image source to the clicked image    
+   console.log(modalImg.src);
+  }
+
+  prevImg(){
+    const modal = document.getElementById("imageModal") as HTMLElement;
+    const modalImg = document.getElementById("modalImage") as HTMLImageElement;
+    this.currectIndex--;
+    if(this.currectIndex<0)
+      this.currectIndex = this.imagesProject.length-1;
+    console.log(this.currectIndex);
+    modalImg.src = this.imagesProject[this.currectIndex]; // Set the modal image source to the clicked image    
+    console.log(modalImg.src);
+   
+  }
 }

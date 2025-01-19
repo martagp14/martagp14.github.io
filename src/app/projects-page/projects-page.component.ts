@@ -32,9 +32,10 @@ export class ProjectsPageComponent {
       + '<li>	Control de banda sonora.', 
       'Something', 
       ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
-        'assets/ProjectsImages/GathererBombers/Imagen2.png', 
         'assets/ProjectsImages/GathererBombers/Imagen3.png', 
-        'assets/ProjectsImages/GathererBombers/Imagen4.png']),
+        'assets/ProjectsImages/GathererBombers/Imagen4.png',
+        'assets/ProjectsImages/GathererBombers/Imagen2.png'] 
+      ),
     new Project('Projecto 2', '', "Decripcion algoo sjkdfhajkshasdhgfaoshjas jfjhafh", '', []),
     new Project('Projecto 3', '', 'Decripcion algoo', '',[]),
     new Project('Projecto 4', '', 'Decripcion algoo', '', []),

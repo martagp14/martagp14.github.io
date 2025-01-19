@@ -9,35 +9,26 @@
       <div class="window-content">
         <p [innerHTML]="data.data.description"></p>
         <br>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li *ngFor="let image of data.data.carouselImages; index as i" 
-                [attr.data-bs-target]="'#carouselExampleIndicators'" 
-                [attr.data-bs-slide-to]="i" 
-                [class.active]="i === 0"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div *ngFor="let image of data.data.carouselImages; index as i">
-              <div class="carousel-item" [class.active]="i === 0">
-                <img class="d-block w-100 carouselphoto" type=file [src]="image" alt="{{i+1}} slide" (click)="openModal(image)">
-              </div>
-            </div>
+        <div class="image-flex">
+          <div class="imageGrid" *ngFor="let image of data.data.carouselImages; index as i" >
+            <img class="imageGridBorder" [src]='image' (click)="openModal(i, data.data.carouselImages)">
+            <p class="imageGridCaption">Image {{i+1}}</p>
+            <!-- <img class="imageGrid" [src]='data.data.carouselImages[1]'>
+            <img class="imageGrid" [src]='data.data.carouselImages[1]'>
+            <img class="imageGrid" [src]='data.data.carouselImages[1]'>
+            <img class="imageGrid" [src]='data.data.carouselImages[1]'> -->
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
         </div>
-       </div>
-       <!-- Modal -->
-      <div id="imageModal" class="modal" (click)="closeModal()">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
       </div>
+
+       <!-- Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <button class="modalButton" (click)="prevImg()">Prev</button>
+        <button class="modalButton" (click)="nextImg()">Next</button>
+      </div>
+
     </mat-dialog-content>
   </div>
 </div>
