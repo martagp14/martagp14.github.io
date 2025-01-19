@@ -1,0 +1,140 @@
+/* Styling for each project window */
+.project-window {
+    background: #f0f0f0;
+    /* Light background color for the window */
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow to give it a lifted look */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    position: relative;
+    z-index: 5;
+    margin: 5px;
+}
+
+/* Window header */
+.window-header {
+    background-color: var(--color-dark-purple);
+    color: black;
+    padding: 0rem 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border: 0px, solid, black;
+    border-width: 0px 0px 3px 0px;
+}
+
+/* Title in the window header */
+.window-title {
+    font-size: 1.1em;
+    text-align: left;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+/* Close button (×) */
+.close-btn {
+    /* cursor: pointer; */
+    font-size: 1.5em;
+    font-weight: 600;
+    border: 0px, solid, black;
+    border-width: 0px 3px 0px 0px;
+    padding: 0.35rem 0.625rem 0.35rem 0rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Styling for the window content */
+.window-content {
+    font-size: 1em;
+    color: #333;
+}
+
+.window-content p {
+    margin: 0;
+}
+
+/*Border animation*/
+
+.dialog-box {
+    position: relative;
+    padding: 10px;
+    background-color: #40a14d;
+    /* Fondo blanco para resaltar el borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    overflow: hidden;
+    /* Para evitar que el borde animado sobresalga */
+    z-index: 0;
+}
+
+.dialog-box::before {
+    content: '';
+    /* Must be set */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(-45deg,
+            var(--color-dark-transparent) 0px,
+            var(--color-dark-transparent) 8px,
+            /* First line width */
+            transparent 8px,
+            transparent 88px),
+        repeating-linear-gradient(-45deg,
+            var(--color-dark-transparent) 12px,
+            var(--color-dark-transparent) 32px,
+            /* First line width */
+            transparent 32px,
+            transparent 100px),
+        repeating-linear-gradient(-45deg,
+            var(--color-dark-transparent) 15px,
+            var(--color-dark-transparent) 19px,
+            /* First line width */
+            transparent 19px,
+            transparent 201px),
+        radial-gradient(var(--color-main-pinkish), var(--color-main-blueish));
+    background-size: 500% 500%;
+    /* Para el efecto de movimiento */
+    animation: moveGlow 100s linear infinite;
+    /*Animación del brillo*/
+    display: block;
+    z-index: 1;
+    /* Coloca el gradiente detrás del contenido */
+}
+
+.dialog-box::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    /* Espaciado interno para el efecto de borde */
+    left: 4px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #5996b300;
+    z-index: 2;
+    /* Fondo blanco para aislar el contenido */
+}
+
+@keyframes moveGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.buttonNavigation {
+    display: flex;
+    padding-top: 20px;
+    margin: auto;
+    gap: 1rem;
+    justify-content: center;
+}

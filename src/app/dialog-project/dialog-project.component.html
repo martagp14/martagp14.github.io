@@ -11,24 +11,11 @@
         <br>
         <div class="image-flex">
           <div class="imageGrid" *ngFor="let image of data.data.carouselImages; index as i" >
-            <img class="imageGridBorder" [src]='image' (click)="openModal(i, data.data.carouselImages)">
+            <img class="imageGridBorder" [src]='image' (click)="openDialog(i, data.data.carouselImages)">
             <p class="imageGridCaption">Image {{i+1}}</p>
-            <!-- <img class="imageGrid" [src]='data.data.carouselImages[1]'>
-            <img class="imageGrid" [src]='data.data.carouselImages[1]'>
-            <img class="imageGrid" [src]='data.data.carouselImages[1]'>
-            <img class="imageGrid" [src]='data.data.carouselImages[1]'> -->
           </div>
         </div>
       </div>
-
-       <!-- Modal -->
-      <div id="imageModal" class="modal">
-        <span class="close" (click)="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <button class="modalButton" (click)="prevImg()">Prev</button>
-        <button class="modalButton" (click)="nextImg()">Next</button>
-      </div>
-
     </mat-dialog-content>
   </div>
 </div>

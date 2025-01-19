@@ -1,0 +1,20 @@
+
+<div class="dialog-box">
+    <div class="project-window">
+      <div class="window-header">
+        <span mat-dialog-close class="close-btn"><i class="material-icons">arrow_back</i></span>
+        <span class="window-title ">{{data.title}} - Images</span>
+      </div>
+      <mat-dialog-content class="mat-typography">
+        <div class="window-content">
+            <img class="modal-content" id="modalImage" [src]='data.carousel[data.index]'>
+            <!-- <button class="modalButton button_top" (click)="prevImg()">Prev</button>
+            <button class="modalButton button_top" (click)="nextImg()">Next</button> -->
+            <div  class="buttonNavigation">
+                <app-dynamic-button [icon]="'keyboard_double_arrow_left'"  (click)="prevImg()"></app-dynamic-button>
+                <app-dynamic-button [icon]="'keyboard_double_arrow_right'" (click)="nextImg()"></app-dynamic-button>
+            </div>
+        </div> 
+      </mat-dialog-content>
+    </div>
+  </div>

@@ -1,6 +1,4 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
-import { Project } from '../projects-page/project';
 import {
   MatDialog,
   MatDialogActions,
@@ -9,23 +7,20 @@ import {
   MAT_DIALOG_DATA
 } from '@angular/material/dialog';
 import { NgFor, CommonModule } from '@angular/common';
-import { PhotoDialogComponent } from './photo-dialog/photo-dialog.component';
+import { MatButtonModule } from '@angular/material/button';
+import { DynamicButtonComponent } from "../../ResourcesComponents/dynamic-button/dynamic-button.component";
 
 @Component({
-  selector: 'app-dialog-project',
+  selector: 'app-photo-dialog',
   standalone: true,
-  imports: [MatDialogContent, MatDialogClose, MatButtonModule, NgFor, CommonModule],
-  templateUrl: './dialog-project.component.html',
-  styleUrl: './dialog-project.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [MatDialogContent, MatDialogClose, MatButtonModule, CommonModule, DynamicButtonComponent],
+  templateUrl: './photo-dialog.component.html',
+  styleUrl: './photo-dialog.component.css'
 })
-export class DialogProjectComponent{
+export class PhotoDialogComponent {
   data = inject(MAT_DIALOG_DATA);
-
-  readonly dialog = inject(MatDialog);
-
-  imagesProject:any;
-  currectIndex:number = 0;
+  imagesProject:any = this.data.carousel;
+  currectIndex:number = this.data.index;
 
   // openModal(image: any) {
   openModal(index: any, carousel:any) {
@@ -36,7 +31,6 @@ export class DialogProjectComponent{
     this.currectIndex=index;
     console.log(carousel[index]);
     modalImg.src = carousel[index];
-    
   }
 
   closeModal() {
@@ -45,7 +39,6 @@ export class DialogProjectComponent{
   } 
 
   nextImg(){
-    const modal = document.getElementById("imageModal") as HTMLElement;
     const modalImg = document.getElementById("modalImage") as HTMLImageElement;
     this.currectIndex++;
     this.currectIndex=this.currectIndex%this.imagesProject.length;
@@ -56,7 +49,6 @@ export class DialogProjectComponent{
   }
 
   prevImg(){
-    const modal = document.getElementById("imageModal") as HTMLElement;
     const modalImg = document.getElementById("modalImage") as HTMLImageElement;
     this.currectIndex--;
     if(this.currectIndex<0)
@@ -65,16 +57,5 @@ export class DialogProjectComponent{
     modalImg.src = this.imagesProject[this.currectIndex]; // Set the modal image source to the clicked image    
     console.log(modalImg.src);
    
-  }
-
-  openDialog(index: any, carousel:any) {
-    const dialogRef = this.dialog.open(PhotoDialogComponent, {
-      width: '70%',
-      data: {
-        index: index, 
-        carousel: carousel, 
-        title: this.data.data.title
-      },
-    });
   }
 }
