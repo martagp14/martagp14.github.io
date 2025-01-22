@@ -4,6 +4,12 @@ export class Project {
     description: string;
     mainImagePath: string; 
     carouselImages: string[]
+    platform:string;
+    urlToPlay:string;
+    engine:string;
+    languages:string;
+    tools:string;
+    numPlayers: string;
 
     // constructor() {
     //     this.title = '';
@@ -11,11 +17,18 @@ export class Project {
     //     this.mainImagePath = '';
     // }
 
-    constructor(title:string, shortdescription:string, description:string, mainImagePath:string, carouselimages:string[]) {
+    constructor(title:string, platform:string, numPlayers:string, shortdescription:string, description:string, urlToPlay:string, 
+        engine:string, languages:string, tools:string, mainImagePath:string, carouselimages:string[]) {
         this.title = title;
         this.shortdescription = shortdescription;
         this.description = description;
         this.mainImagePath = mainImagePath;
-        this.carouselImages = carouselimages
+        this.carouselImages = carouselimages;
+        this.platform=platform;
+        this.urlToPlay=urlToPlay;
+        this.engine=engine;
+        this.languages=languages;
+        this.tools=tools;
+        this.numPlayers = numPlayers;
     }
 }
