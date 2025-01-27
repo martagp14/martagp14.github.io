@@ -162,6 +162,7 @@
 
 .containerDataBox{
   display: block;
+  width: 50%;
 }
 
 .dataBox{
@@ -171,8 +172,12 @@
   margin: 2vh;
 }
 
+.dataText2{
+  padding: 2vh;
+}
 .dataText{
   padding: 2vh;
+  width: 70%;
 }
 
 .custom-list {

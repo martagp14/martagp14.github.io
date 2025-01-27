@@ -37,7 +37,7 @@ export class ProjectsPageComponent {
       'Unity',
       'C#',
       'VS Code, Photoshop, Procreate, Audacity',
-      '',
+      'assets/ProjectsImages/GathererBombers/Imagen1.png',
       ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
         'assets/ProjectsImages/GathererBombers/Imagen3.png', 
         'assets/ProjectsImages/GathererBombers/Imagen4.png',
@@ -48,6 +48,7 @@ export class ProjectsPageComponent {
       'Smartphones (Android)',
       '1 Jugador',
       'Toma el papel de un estudiante de universidad recién llegado a su nuevo puesto de trabajo. En él te enseñarán los fundamentos de la metodología ágil de trabajo Scrum a través de minijuegos e interacciones con el resto del equipo.',
+      '<b>Aspectos clave desarrollados:</b><br>'+ 
       '<ul class="custom-list"><li>Creación y texturizado del escenario a través de modelado propio e importación y adecuación de assets externos.</li>'+
       '<li>Control del flujo de animaciones de los personajes y sincronización con sus respectivos diálogos.</li>'+
       '<li>Uso de IK (Inverse Kinematic) para la modificación de animaciones predefinidas de personajes y su correcta interacción con el entorno.</li>'+
@@ -69,6 +70,35 @@ export class ProjectsPageComponent {
         'assets/ProjectsImages/ScrumVR/Screenshot_20210625-120330.jpg',
       ]
     ),
+    new Project('Supermarket Mission',
+      'PC',
+      '1 Jugador',
+      '¿Te toca hacer la compra a ti solo? ¡Una misión sencilla para un espía como tú! Demuestra a tus padres que eres capaz de traer todos los elementos que te piden del supermercado en perfecto estado.',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Creación propia de todos los sprites utilizados.</li>'+
+      '<li>Manejo de puntuaciones del jugador.</li>'+
+      '<li>Cohesión del estado de los elementos del juego durante toda la partida.</li>'+
+      '<li>Recopilación de datos de puntuaciones y jugador en una base de datos “MySQL”.</li>'+
+      '<li>Interacción con el juego a través de ratón y teclado.</li></ul>',
+      'Juego desarrollado al completo como Trabajo de Fin de Máster, cuyo objetivo es trabajar el desarrollo del pensamiento computacional en niños de primaria mientras juegan. Trabaja áreas como la descomposición de problemas, el análisis de características, identificación de patrones y pensamiento algorítmico. \nLas puntuaciones de los jugadores y datos básicos como edad y género son recogidos para poder realizar un estudio sobre la efectividad educativa del videojuego.',
+      '',
+      'Unity',
+      'C#',
+      'VS Code, Procreate, Photoshop, Blender, phpMyAdmin',
+      'assets/ProjectsImages/SupermarketMission/2024-07-03 (2).png',
+      ['assets/ProjectsImages/SupermarketMission/2024-07-03 (2).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (5).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (10).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (16).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (21).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (29).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (33).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (45).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (51).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (52).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (65).png',
+      ]
+    )
   ];
 
   getFormattedText(text:string){
