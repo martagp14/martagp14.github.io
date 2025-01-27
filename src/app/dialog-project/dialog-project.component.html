@@ -1,4 +1,3 @@
-
 <div class="dialog-box">
   <div class="project-window">
     <div class="window-header">
@@ -7,12 +6,29 @@
     </div>
     <mat-dialog-content class="mat-typography">
       <div class="window-content">
-        <p [innerHTML]="data.data.description"></p>
+        <div class="higherContainer">
+          <div class="containerDataBox">
+            <div class="dataBox">
+              <p><b>Título: </b>{{data.data.title}}</p>
+              <p><b>Plataforma: </b>{{data.data.platform}}</p>
+              <p><b>Número de jugadores: </b>{{data.data.numPlayers}}</p>
+              <p><b>Motor de videojuegos: </b>{{data.data.engine}}</p>
+              <p><b>Herramientas adicionales: </b>{{data.data.tools}}</p>
+              <p><b>Lenguajes de programación: </b>{{data.data.languages}}</p>
+            </div>
+            <div class="dataBox">
+              <p><b>Sinopsis: </b>{{data.data.shortdescription}}</p>
+              <p *ngIf="data.data.urlToPlay!=''"><b>Pruebalo: </b>{{data.data.urlToPlay}}</p>
+            </div>
+          </div>
+          <p class="dataText" [innerHTML]="data.data.keypoints"></p>
+        </div>
+        <p class="dataText" [innerHTML]="data.data.description"></p>
         <br>
         <div class="image-flex">
-          <div class="polaroidGrid" *ngFor="let image of data.data.carouselImages; index as i" >
+          <div class="polaroidGrid" *ngFor="let image of data.data.carouselImages; index as i">
             <img class="imageGrid" [src]='image' (click)="openDialog(i, data.data.carouselImages)">
-            <div>
+            <div class="captionGrid">
               <p class="imageGridCaption">Image {{i+1}}</p>
             </div>
           </div>
@@ -21,4 +37,3 @@
     </mat-dialog-content>
   </div>
 </div>
-

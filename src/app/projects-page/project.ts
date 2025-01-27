@@ -2,6 +2,7 @@ export class Project {
     title: string;
     shortdescription:string;
     description: string;
+    keypoints:string;
     mainImagePath: string; 
     carouselImages: string[]
     platform:string;
@@ -17,7 +18,7 @@ export class Project {
     //     this.mainImagePath = '';
     // }
 
-    constructor(title:string, platform:string, numPlayers:string, shortdescription:string, description:string, urlToPlay:string, 
+    constructor(title:string, platform:string, numPlayers:string, shortdescription:string, keypoints:string, description:string, urlToPlay:string, 
         engine:string, languages:string, tools:string, mainImagePath:string, carouselimages:string[]) {
         this.title = title;
         this.shortdescription = shortdescription;
@@ -30,5 +31,6 @@ export class Project {
         this.languages=languages;
         this.tools=tools;
         this.numPlayers = numPlayers;
+        this.keypoints = keypoints;
     }
 }

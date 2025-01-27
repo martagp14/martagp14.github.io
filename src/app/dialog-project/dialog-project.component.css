@@ -154,3 +154,34 @@
 .captionGrid{
   align-items: end;
 }
+
+.higherContainer{
+  display: flex;
+
+}
+
+.containerDataBox{
+  display: block;
+}
+
+.dataBox{
+  background-color: var(--color-main-pinkish);
+  border: 0.35vh solid black;
+  padding: 2vh;
+  margin: 2vh;
+}
+
+.dataText{
+  padding: 2vh;
+}
+
+.custom-list {
+  list-style-type: none;
+  padding-left: 20px; /* Espaciado desde el borde izquierdo */
+  padding-top: 20px;
+}
+
+.custom-list li {
+text-indent: -20px; /* Mueve la primera línea hacia la izquierda */
+padding-left: 40px; /* Mueve el contenido a la derecha para alinearlo */
+}
