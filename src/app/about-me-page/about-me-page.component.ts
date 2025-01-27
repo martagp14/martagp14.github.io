@@ -11,4 +11,11 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class AboutMePageComponent {
 
+  downloadCV() {
+    const link = document.createElement("a");
+    link.href = "assets/CV/CV Marta García Pérez.pdf"; // Cambia esta ruta al archivo PDF
+    link.download = "CV Marta García Pérez.pdf"; // Nombre del archivo descargado
+    link.click();
+  }
+
 }
