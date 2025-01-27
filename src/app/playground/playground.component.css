@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.construction-panel {
+    text-align: center;
+    margin: 5rem;
+    padding: 2rem;
+    border: 5px solid #000;
+    background: repeating-linear-gradient(
+        45deg,
+        #e7aa27,
+        #e7aa27 20px,
+        #1f1f1f 20px,
+        #1f1f1f 40px
+    );
+}
+
+.construction-panel h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+.construction-panel p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: inherit;
+}
