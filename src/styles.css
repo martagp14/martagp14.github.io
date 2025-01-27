@@ -121,4 +121,5 @@ body {
 
 p, a, span, button{
   font-family: 'Chakra Petch';
+  text-align: justify;
 }
