@@ -5,3 +5,7 @@ body {
     position: relative;  /* Set relative positioning for the body to be the reference point for absolute positioning */
   }
 
+.textBox{
+  background-color: white;
+  border: 2rem solid black;
+}
