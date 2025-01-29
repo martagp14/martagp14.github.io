@@ -1,4 +1,4 @@
-<div class="project-list">
+<!-- <div class="project-list">
     <div *ngFor="let project of projects" >
         <div class="project-window">
             <div class="close-btn2 window-header" (click)="openDialog(project)">
@@ -10,5 +10,11 @@
                 <p [innerHTML]="project.shortdescription | newline"></p>
             </div>
         </div>
+    </div>
+</div> -->
+
+<div class="project-list">
+    <div *ngFor="let project of projects; index as i" >
+        <app-cartridge-project (click)="openDialog(project)" [gameImagePath]="project.mainImagePath" [gameTitle]="project.title"></app-cartridge-project>
     </div>
 </div>

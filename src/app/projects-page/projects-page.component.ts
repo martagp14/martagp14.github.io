@@ -6,11 +6,12 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { DialogProjectComponent } from '../dialog-project/dialog-project.component';
 import {MatIconModule} from '@angular/material/icon';
 import { NewlinePipe } from '../Pipes/newline.pipe';
+import { CartridgeProjectComponent } from './cartridge-project/cartridge-project.component';
 
 @Component({
   selector: 'app-projects-page',
   standalone: true,
-  imports: [NgFor, MatButtonModule, MatDialogModule, MatIconModule, NewlinePipe],
+  imports: [NgFor, MatButtonModule, MatDialogModule, MatIconModule,CartridgeProjectComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './projects-page.component.html',
   styleUrl: './projects-page.component.css'
@@ -37,7 +38,7 @@ export class ProjectsPageComponent {
       'Unity',
       'C#',
       'VS Code, Photoshop, Procreate, Audacity',
-      'assets/ProjectsImages/GathererBombers/Imagen1.png',
+      'assets/ProjectsImages/GathererBombers/MainImage.png',
       ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
         'assets/ProjectsImages/GathererBombers/Imagen3.png', 
         'assets/ProjectsImages/GathererBombers/Imagen4.png',
@@ -60,7 +61,7 @@ export class ProjectsPageComponent {
       'Unity',
       'C#', 
       'Blender, Photoshop, Audacity',
-      'assets/ProjectsImages/ScrumVR/LogoScrumVR.png',
+      'assets/ProjectsImages/ScrumVR/MainImage.png',
       ['assets/ProjectsImages/ScrumVR/LogoScrumVR.png',
         'assets/ProjectsImages/ScrumVR/10 SM explicando en el tablon 2.PNG',
         'assets/ProjectsImages/ScrumVR/2021-05-28 (5).png',
@@ -85,7 +86,7 @@ export class ProjectsPageComponent {
       'Unity',
       'C#',
       'VS Code, Procreate, Photoshop, Blender, phpMyAdmin',
-      'assets/ProjectsImages/SupermarketMission/2024-07-03 (2).png',
+      'assets/ProjectsImages/SupermarketMission/MainImage.png',
       ['assets/ProjectsImages/SupermarketMission/2024-07-03 (2).png',
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (5).png',
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (10).png',

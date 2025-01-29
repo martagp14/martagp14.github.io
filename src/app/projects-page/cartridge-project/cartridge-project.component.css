@@ -1,0 +1,56 @@
+.custom-button {
+    position: relative;
+    height: 25vh;
+    width: 25vh; 
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    object-fit: contain;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 300px;
+  }
+  
+  .image-background {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen de fondo se ajuste bien */
+    z-index: 1; /* Envía esta imagen al fondo */
+    align-self: center;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit:contain; /* Asegura que la imagen de overlay se ajuste bien */
+    z-index: 2; /* Encima del fondo, pero debajo del texto */
+  }
+  
+  .button-text {
+    position: relative;
+    z-index: 3; /* Encima de ambas imágenes */
+    color: #434242;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 2.5rem;
+  }
+  
+  .custom-button:hover{
+    background-color: var(--color-dark-purple);
+    height: 24vh; /* Ajusta según tus necesidades */
+    width: 24vh; /* Ajusta según tus necesidades */
+  }
