@@ -1,11 +1,13 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CharacterComponent } from '../character/character.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CharacterComponent],
+  imports: [CharacterComponent, MatIconModule],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })

@@ -10,6 +10,13 @@ body {
   border: 2rem solid black;
 }
 
+.centerContent{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .centerBlock{
   display: flex;
   align-content: center;
@@ -17,8 +24,80 @@ body {
   text-align: center;
   flex-direction: column;
   height: 100%;
+  padding: 0%;
 }
 
 p {
   text-align: inherit;
+}
+
+.coverImage{
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 50rem;
+  width: auto;
+  opacity: 60%;
+}
+
+img {
+  height: 100%;
+}
+
+
+/* Styling for each project window */
+.project-window {
+  background: #f0f0f0; /* Light background color for the window */
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 3px, solid, black;
+  box-shadow: 0 4px 8px var(--color-dark-purple);
+  margin-top: 10%;
+  margin: 5%;
+  width: 60%;
+}
+
+/* Window header */
+.window-header {
+  background-color: var(--color-dark-purple);
+  color: black;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border: 0px, solid, black;
+  border-width: 0px 0px 3px 0px;
+}
+
+/* Title in the window header */
+.window-title {
+  font-size: 1.1em;
+}
+
+/* Close button (×) */
+.close-btn {
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 0px, solid, black;
+  border-width: 0px 0px 0px 3px;
+  padding-left: 10px;
+  .icon {
+      transform: scale(1.2);
+      margin-top: 35%;
+  }
+}
+
+/* Styling for the window content */
+.window-content {
+  padding: 15px;
+  background-color: white;
+  color: #333;
+}
+
+.window-content p {
+  margin: 0; 
 }
