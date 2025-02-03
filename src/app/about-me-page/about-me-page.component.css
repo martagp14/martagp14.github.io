@@ -60,6 +60,10 @@ button {
     text-decoration: none;
     font-size: 15px;
     margin: 50px;
+    width: 13rem;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    text-align: center;
 }
 
 button.learn-more {
@@ -118,4 +122,16 @@ button.learn-more:active::before {
     box-shadow: 0 0 0 2px black;
     -webkit-transform: translate3d(0, 0, -1em);
     transform: translate3d(0, 0, -1em);
+}
+
+button > img {
+    height: 6rem;
+    width: auto;
+    display: flex;
+}
+
+button > p{
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    text-align: center;
 }
