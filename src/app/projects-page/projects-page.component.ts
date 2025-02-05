@@ -99,6 +99,45 @@ export class ProjectsPageComponent {
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (52).png',
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (65).png',
       ]
+    ),
+    new Project('Fishing Legends',
+      'PC y Web',
+      '1 Jugador',
+      '¡Prepara tu caña, marinero! ¿Tendrás lo que hace falta para adentrarte en estas aguas y pescar todos los peces que habitan en ellas? Demuéstralo. Pero ten cuidado con el Leviatán. Si pretendes capturar a esta terrible criatura prepárate para afrontar todos los peligros que ello conlleva… Prepara tu sedal, mejora ese bote y emprende la aventura de tu vida.',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Control de sonidos, música y otros ajustes.</li>'+
+      '<li>Arte 2D.</li>'+
+      '<li>Diseño y desarrollo de menús y UI.</li></ul>',
+      'Este juego fue desarrollado como proyecto para una asignatura del máster junto con un grupo de compañeros, en el que la colaboración fue clave para conseguir sacarlo adelante.',
+      'https://polyplus.itch.io/fishing',
+      'Unity',
+      'C#',
+      'VS Code, Procreate, Photoshop, Blender',
+      'assets/ProjectsImages/FishingLegends/MainImage2.png',
+      ['assets/ProjectsImages/FishingLegends/8psLyg.png',
+        'assets/ProjectsImages/FishingLegends/IaaLD0.png',
+        'assets/ProjectsImages/FishingLegends/mPp3I7.png',
+        'assets/ProjectsImages/FishingLegends/MQKHzY.png',
+      ]
+    ),
+    new Project('Good Puppy',
+      'PC',
+      '1 Jugador',
+      '¡Guau! !Guau! Lo que significa… Amo fuera de la casa, ¡es hora de destrozar! Ponte patas a la obra y rompe todo lo que puedas sin que te pille tu amo, que volverá de forma recurrente a la casa para ver que todo sigue en orden. Como te pille fuera de la cama, prepárate para quedarte sin cena.',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Control de puntuaciones del jugador. </li>'+
+      '<li>Boceto narrativo.</li>'+
+      '<li>Diseño y desarrollo de menús y UI.</li></ul>',
+      'Desarrollado durante “Games Now! Game Jam – Spring 2024”, en el trascurso de una semana colaborando con compañeros de equipo de diversas nacionalidades. <br>A nivel personal se trata de mi primer contacto con el motor de videojuegos Unreal Engine.',
+      'https://anele-i.itch.io/good-puppy',
+      'Unreal Engine',
+      'Blueprints',
+      'Trello, Figma',
+      'assets/ProjectsImages/GoodPuppy/MainImage.png',
+      ['assets/ProjectsImages/GoodPuppy/LnftfP.png',
+        'assets/ProjectsImages/GoodPuppy/nq5CQW.png',
+        'assets/ProjectsImages/GoodPuppy/tksoYA.png',
+      ]
     )
   ];
 
