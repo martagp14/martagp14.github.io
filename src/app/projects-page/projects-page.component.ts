@@ -46,7 +46,7 @@ export class ProjectsPageComponent {
     ),
 
     new Project('Scrum VR',
-      'Smartphones (Android)',
+      'Android (Cardboard)',
       '1 Jugador',
       'Toma el papel de un estudiante de universidad recién llegado a su nuevo puesto de trabajo. En él te enseñarán los fundamentos de la metodología ágil de trabajo Scrum a través de minijuegos e interacciones con el resto del equipo.',
       '<b>Aspectos clave desarrollados:</b><br>'+ 
@@ -107,6 +107,7 @@ export class ProjectsPageComponent {
       '<b>Aspectos clave desarrollados:</b><br>'+
       '<ul class="custom-list"><li>Control de sonidos, música y otros ajustes.</li>'+
       '<li>Arte 2D.</li>'+
+      '<li>Modelado 3D de algunos elementos</li>'+
       '<li>Diseño y desarrollo de menús y UI.</li></ul>',
       'Este juego fue desarrollado como proyecto para una asignatura del máster junto con un grupo de compañeros, en el que la colaboración fue clave para conseguir sacarlo adelante.',
       'https://polyplus.itch.io/fishing',
@@ -137,6 +138,29 @@ export class ProjectsPageComponent {
       ['assets/ProjectsImages/GoodPuppy/LnftfP.png',
         'assets/ProjectsImages/GoodPuppy/nq5CQW.png',
         'assets/ProjectsImages/GoodPuppy/tksoYA.png',
+      ]
+    ),
+    new Project('Space QR',
+      'Android (Cardboard)',
+      '1 Jugador',
+      'Cadete espacial, ¿listo para el entrenamiento? Prepare sus QRs y analice al enemigo, golpéele con ese proyectil que pide a gritos. Pero cuidado no te equivoques de color, serán puntos negativos en tu expediente. ¡Desenfunda tus armas y lánzate al espacio!',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Sistema de selección a través de la dirección de la mirada y un Raycaster. </li>'+
+      '<li>Utilización del paquete “AR Maker Detector” para gestionar la detección de códigos QR.</li>'+
+      '<li>Manejo de puntuaciones y tiempo de partida.</li>'+
+      '<li>Uso de la API “Resonance Audio” para reproducir un sonido estéreo en las dianas y ayudar al jugador a localizarlas.</li>'+
+      '<li>Diseño y desarrollo de UI.</li></ul>',
+      'Minijuego desarrollado durante una asignatura del máster de Realidad Virtual. Fue mi primera experiencia mezclando elementos del mundo real, como son los códigos QR, para interaccionar con un juego. <br>Este título debe jugarse con una montura tipo cardboard, el teléfono móvil y los códigos QRs pertinentes impresos en papel. Con la dirección en la que apunta la cabeza, se establece la dirección en la que se dispara. <br>Cuando el jugador ve un proyectil de un color, debe elevar en frente suya el QR correspondiente a ese color, para disparar el proyectil correcto. Los QRs son detectados gracias a la ayuda de la cámara trasera del teléfono móvil.',
+      '',
+      'Unity',
+      'C#',
+      'VS Code, Photoshop',
+      'assets/ProjectsImages/SpaceShooting/MainImage.png',
+      ['assets/ProjectsImages/SpaceShooting/Imagen5.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen1.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen2.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen3.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen4.png'
       ]
     )
   ];
