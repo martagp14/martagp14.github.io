@@ -41,8 +41,8 @@ export class ProjectsPageComponent {
       'assets/ProjectsImages/GathererBombers/MainImage.png',
       ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
         'assets/ProjectsImages/GathererBombers/Imagen3.png', 
-        'assets/ProjectsImages/GathererBombers/Imagen4.png',
-        'assets/ProjectsImages/GathererBombers/Imagen2.png'] 
+        'assets/ProjectsImages/GathererBombers/Imagen2.png',
+        'assets/ProjectsImages/GathererBombers/Imagen4.png'] 
     ),
 
     new Project('Scrum VR',
