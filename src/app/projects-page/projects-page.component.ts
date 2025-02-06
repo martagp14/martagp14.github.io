@@ -41,12 +41,12 @@ export class ProjectsPageComponent {
       'assets/ProjectsImages/GathererBombers/MainImage.png',
       ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
         'assets/ProjectsImages/GathererBombers/Imagen3.png', 
-        'assets/ProjectsImages/GathererBombers/Imagen4.png',
-        'assets/ProjectsImages/GathererBombers/Imagen2.png'] 
+        'assets/ProjectsImages/GathererBombers/Imagen2.png',
+        'assets/ProjectsImages/GathererBombers/Imagen4.png'] 
     ),
 
     new Project('Scrum VR',
-      'Smartphones (Android)',
+      'Android (Cardboard)',
       '1 Jugador',
       'Toma el papel de un estudiante de universidad recién llegado a su nuevo puesto de trabajo. En él te enseñarán los fundamentos de la metodología ágil de trabajo Scrum a través de minijuegos e interacciones con el resto del equipo.',
       '<b>Aspectos clave desarrollados:</b><br>'+ 
@@ -98,6 +98,69 @@ export class ProjectsPageComponent {
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (51).png',
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (52).png',
         'assets/ProjectsImages/SupermarketMission/2024-07-03 (65).png',
+      ]
+    ),
+    new Project('Fishing Legends',
+      'PC y Web',
+      '1 Jugador',
+      '¡Prepara tu caña, marinero! ¿Tendrás lo que hace falta para adentrarte en estas aguas y pescar todos los peces que habitan en ellas? Demuéstralo. Pero ten cuidado con el Leviatán. Si pretendes capturar a esta terrible criatura prepárate para afrontar todos los peligros que ello conlleva… Prepara tu sedal, mejora ese bote y emprende la aventura de tu vida.',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Control de sonidos, música y otros ajustes.</li>'+
+      '<li>Arte 2D.</li>'+
+      '<li>Modelado 3D de algunos elementos</li>'+
+      '<li>Diseño y desarrollo de menús y UI.</li></ul>',
+      'Este juego fue desarrollado como proyecto para una asignatura del máster junto con un grupo de compañeros, en el que la colaboración fue clave para conseguir sacarlo adelante.',
+      'https://polyplus.itch.io/fishing',
+      'Unity',
+      'C#',
+      'VS Code, Procreate, Photoshop, Blender',
+      'assets/ProjectsImages/FishingLegends/MainImage2.png',
+      ['assets/ProjectsImages/FishingLegends/8psLyg.png',
+        'assets/ProjectsImages/FishingLegends/IaaLD0.png',
+        'assets/ProjectsImages/FishingLegends/mPp3I7.png',
+        'assets/ProjectsImages/FishingLegends/MQKHzY.png',
+      ]
+    ),
+    new Project('Good Puppy',
+      'PC',
+      '1 Jugador',
+      '¡Guau! !Guau! Lo que significa… Amo fuera de la casa, ¡es hora de destrozar! Ponte patas a la obra y rompe todo lo que puedas sin que te pille tu amo, que volverá de forma recurrente a la casa para ver que todo sigue en orden. Como te pille fuera de la cama, prepárate para quedarte sin cena.',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Control de puntuaciones del jugador. </li>'+
+      '<li>Boceto narrativo.</li>'+
+      '<li>Diseño y desarrollo de menús y UI.</li></ul>',
+      'Desarrollado durante “Games Now! Game Jam – Spring 2024”, en el trascurso de una semana colaborando con compañeros de equipo de diversas nacionalidades. <br>A nivel personal se trata de mi primer contacto con el motor de videojuegos Unreal Engine.',
+      'https://anele-i.itch.io/good-puppy',
+      'Unreal Engine',
+      'Blueprints',
+      'Trello, Figma',
+      'assets/ProjectsImages/GoodPuppy/MainImage.png',
+      ['assets/ProjectsImages/GoodPuppy/LnftfP.png',
+        'assets/ProjectsImages/GoodPuppy/nq5CQW.png',
+        'assets/ProjectsImages/GoodPuppy/tksoYA.png',
+      ]
+    ),
+    new Project('Space QR',
+      'Android (Cardboard)',
+      '1 Jugador',
+      'Cadete espacial, ¿listo para el entrenamiento? Prepare sus QRs y analice al enemigo, golpéele con ese proyectil que pide a gritos. Pero cuidado no te equivoques de color, serán puntos negativos en tu expediente. ¡Desenfunda tus armas y lánzate al espacio!',
+      '<b>Aspectos clave desarrollados:</b><br>'+
+      '<ul class="custom-list"><li>Sistema de selección a través de la dirección de la mirada y un Raycaster. </li>'+
+      '<li>Utilización del paquete “AR Maker Detector” para gestionar la detección de códigos QR.</li>'+
+      '<li>Manejo de puntuaciones y tiempo de partida.</li>'+
+      '<li>Uso de la API “Resonance Audio” para reproducir un sonido estéreo en las dianas y ayudar al jugador a localizarlas.</li>'+
+      '<li>Diseño y desarrollo de UI.</li></ul>',
+      'Minijuego desarrollado durante una asignatura del máster de Realidad Virtual. Fue mi primera experiencia mezclando elementos del mundo real, como son los códigos QR, para interaccionar con un juego. <br>Este título debe jugarse con una montura tipo cardboard, el teléfono móvil y los códigos QRs pertinentes impresos en papel. Con la dirección en la que apunta la cabeza, se establece la dirección en la que se dispara. <br>Cuando el jugador ve un proyectil de un color, debe elevar en frente suya el QR correspondiente a ese color, para disparar el proyectil correcto. Los QRs son detectados gracias a la ayuda de la cámara trasera del teléfono móvil.',
+      '',
+      'Unity',
+      'C#',
+      'VS Code, Photoshop',
+      'assets/ProjectsImages/SpaceShooting/MainImage.png',
+      ['assets/ProjectsImages/SpaceShooting/Imagen5.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen1.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen2.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen3.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen4.png'
       ]
     )
   ];

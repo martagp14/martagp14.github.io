@@ -18,7 +18,7 @@
             </div>
             <div class="dataBox">
               <p><b>Sinopsis: </b>{{data.data.shortdescription}}</p>
-              <p *ngIf="data.data.urlToPlay!=''"><b>Pruebalo: </b>{{data.data.urlToPlay}}</p>
+              <p *ngIf="data.data.urlToPlay!=''"><b>Pruébalo: </b><a [href]='data.data.urlToPlay' target="_blank">{{data.data.urlToPlay}}</a></p>
             </div>
           </div>
           <p class="dataText" [innerHTML]="data.data.keypoints"></p>

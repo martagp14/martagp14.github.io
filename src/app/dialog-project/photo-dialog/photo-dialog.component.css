@@ -137,4 +137,11 @@
     margin: auto;
     gap: 1rem;
     justify-content: center;
+    text-align: center;
+}
+
+.rightButton{
+    justify-content: right;
+    text-align: right;
+    
 }
