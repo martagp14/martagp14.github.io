@@ -7,6 +7,11 @@ import { RouterOutlet, RouterLink, RouterLinkActive, Router,
   NavigationCancel,
   NavigationError } from '@angular/router';
 
+  export enum Language {
+    EN = "EN",
+    ES = "ES"
+  };
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,9 +21,13 @@ import { RouterOutlet, RouterLink, RouterLinkActive, Router,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'portfolio';
   public showOverlay = true;
+
+  Language = Language;
+  static currentLanguage = Language.EN;
 
   constructor(private router: Router) {
 
@@ -44,4 +53,11 @@ export class AppComponent {
       this.showOverlay = false;
     }
   }
+
+  changeLanguage(language: Language){
+    AppComponent.currentLanguage = language;
+    console.log( AppComponent.currentLanguage);
+  }
 }
+
+

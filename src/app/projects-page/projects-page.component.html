@@ -14,7 +14,7 @@
 </div> -->
 
 <div class="project-list">
-    <div *ngFor="let project of projects; index as i" >
+    <div *ngFor="let project of projectsEng; index as i" >
         <app-cartridge-project (click)="openDialog(project)" [gameImagePath]="project.mainImagePath" [gameTitle]="project.title"></app-cartridge-project>
     </div>
 </div>

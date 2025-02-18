@@ -2,16 +2,28 @@ import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CharacterComponent } from '../character/character.component';
 import {MatIconModule} from '@angular/material/icon';
-
+import { NgIf } from '@angular/common';
+import { AppComponent, Language } from '../app.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CharacterComponent, MatIconModule],
+  imports: [CharacterComponent, MatIconModule, NgIf],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
 export class HomePageComponent{ //implements AfterViewInit{
+
+  currentLanguage = AppComponent.currentLanguage;
+  Language = Language;
+
+  compareLanguage(language: Language){
+    console.log(this.currentLanguage)
+
+    console.log(this.currentLanguage==language)
+    return this.currentLanguage==language;
+  }
+
   // character = document.getElementById('character');
 
   // ngAfterViewInit() {
