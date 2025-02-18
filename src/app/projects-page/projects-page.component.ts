@@ -165,6 +165,152 @@ export class ProjectsPageComponent {
     )
   ];
 
+  projectsEng: Project[] = [
+    new Project('Gatherer Bombers',  
+      'PC',  
+      '2 Local Players',  
+      'You are a miner determined to find all the hidden treasures in this mine. Armed with your pickaxe and a weapon, you will face off against your opponent, who has the exact same goal. Collect all the treasures or eliminate them before they do, or you will lose the game!',  
+      '<b>Key Features Developed:</b><br>'  
+      + '<ul class="custom-list"><li>Designed an algorithm for terrain generation using the Perlin Noise function, ensuring continuity and coherence among the map elements. Players determine the map dimensions before starting the game.</li>'  
+      + '<li>Implemented Unity’s variable tile system, which changes appearance based on its surroundings.</li>'  
+      + '<li>Character control via keyboard: movement, mining, and shooting.</li>'  
+      + '<li>Character interaction with the environment: water slows down movement, while lava reduces health points.</li>'  
+      + '<li>Managed character animations and environmental elements using sprites and Unity’s animation system.</li>'  
+      + '<li>Developed a player health point system.</li>'  
+      + '<li>Created a treasure collection and scoring system.</li>'  
+      + '<li>Implemented background music control.</li> </ul>',  
+      'Project developed as my first Final Degree Project and my first fully completed video game. It is a top-down, pixel-art style game set in a mine. <br>Using the Perlin Noise function, different materials and elements were distributed across the map, which players interact with as they progress: mining materials to clear paths and uncover treasures, taking damage from lava or their opponent, and being slowed down by water.',  
+      '',  
+      'Unity',  
+      'C#',  
+      'VS Code, Photoshop, Procreate, Audacity',  
+      'assets/ProjectsImages/GathererBombers/MainImage.png',
+      ['assets/ProjectsImages/GathererBombers/Imagen1.png', 
+        'assets/ProjectsImages/GathererBombers/Imagen3.png', 
+        'assets/ProjectsImages/GathererBombers/Imagen2.png',
+        'assets/ProjectsImages/GathererBombers/Imagen4.png'] 
+    ),
+
+    new Project('Scrum VR',
+      'Android (Cardboard)',
+      '1 Player',
+      'Step into the role of a university student starting their first job. Here, you will learn the fundamentals of the agile Scrum methodology through mini-games and interactions with your team.',
+      '<b>Key Features Developed:</b><br>'+
+      '<ul class="custom-list"><li>Creation and texturing of the environment through custom modeling and importing/adapting external assets.</li>'+
+      '<li>Control of character animation flow and synchronization with their respective dialogues.</li>'+
+      '<li>Use of IK (Inverse Kinematics) to modify predefined character animations for proper interaction with the environment.</li>'+
+      '<li>User interaction system with game elements based on head positioning direction.</li>'+
+      '<li>Implementation of Google Cardboard XR Plugin for Unity and Unity XR Plug-in Management for integrating VR components and stereoscopic rendering.</li>'+
+      '<li>Various mini-game mechanics and interactive dialogues.</li></ul>',
+      'This project was developed as my second Final Degree Project. It is an educational Virtual Reality tool designed to teach the agile Scrum methodology. Throughout the experience, players are introduced to various concepts of Scrum and then engage in interactive mini-games to test their understanding. <br>This tool has been used in classes at the Universidad Politécnica de Madrid (ETSISI).',
+      '',
+      'Unity',
+      'C#', 
+      'Blender, Photoshop, Audacity',
+      'assets/ProjectsImages/ScrumVR/MainImage.png',
+      ['assets/ProjectsImages/ScrumVR/LogoScrumVR.png',
+        'assets/ProjectsImages/ScrumVR/10 SM explicando en el tablon 2.PNG',
+        'assets/ProjectsImages/ScrumVR/2021-05-28 (5).png',
+        'assets/ProjectsImages/ScrumVR/2021-06-15 (1) r.png',
+        'assets/ProjectsImages/ScrumVR/2021-06-19 (8) r.png',
+        'assets/ProjectsImages/ScrumVR/Imagen1.png',
+        'assets/ProjectsImages/ScrumVR/Screenshot_20210625-120330.jpg',
+      ]
+    ),
+    new Project('Supermarket Mission',
+      'PC',
+      '1 Player',
+      'Is it now your turn to do the shopping alone? A simple mission for a spy like you! Prove to your parents that you can bring back all the items they asked for in perfect condition.',
+      '<b>Key Features Developed:</b><br>'+
+      '<ul class="custom-list"><li>Hand-drawn creation of all in-game sprites.</li>'+
+      '<li>Player score management.</li>'+
+      '<li>Maintaining game state consistency throughout the entire session.</li>'+
+      '<li>Collection of player scores and basic data in a “MySQL” database.</li>'+
+      '<li>Interaction with the game via mouse and keyboard.</li></ul>',
+      'A fully developed game as my Final Master\'s Project, aimed at developing computational thinking in primary school children while they play. It focuses on areas such as problem decomposition, feature analysis, pattern recognition, and algorithmic thinking. \nPlayer scores and some other basic data, like age and gender, are collected to conduct a study on the educational effectiveness of the game.',
+      '',
+      'Unity',
+      'C#',
+      'VS Code, Procreate, Photoshop, Blender, phpMyAdmin',
+      'assets/ProjectsImages/SupermarketMission/MainImage.png',
+      ['assets/ProjectsImages/SupermarketMission/2024-07-03 (2).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (5).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (10).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (16).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (21).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (29).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (33).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (45).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (51).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (52).png',
+        'assets/ProjectsImages/SupermarketMission/2024-07-03 (65).png',
+      ]
+    ),
+    new Project('Fishing Legends',
+      'PC & Web',
+      '1 Player',
+      'Grab your fishing rod, sailor! Do you have what it takes to venture into these waters and catch all the fish that live in them? Prove it. But beware of the Leviathan. If you plan to capture this fearsome creature, be ready to face all the dangers that come with it… Prepare your line, upgrade your boat, and embark on the adventure of a lifetime.',
+      '<b>Key Features Developed:</b><br>'+
+      '<ul class="custom-list"><li>Control of sound, music, and other settings.</li>'+
+      '<li>2D artwork.</li>'+
+      '<li>3D modeling of certain elements.</li>'+
+      '<li>Design and development of menus and UI.</li></ul>',
+      'This game was developed as a project for a Master’s course in collaboration with a team of classmates, where teamwork was crucial to its completion.',
+      'https://polyplus.itch.io/fishing',
+      'Unity',
+      'C#',
+      'VS Code, Procreate, Photoshop, Blender',
+      'assets/ProjectsImages/FishingLegends/MainImage2.png',
+      ['assets/ProjectsImages/FishingLegends/8psLyg.png',
+        'assets/ProjectsImages/FishingLegends/IaaLD0.png',
+        'assets/ProjectsImages/FishingLegends/mPp3I7.png',
+        'assets/ProjectsImages/FishingLegends/MQKHzY.png',
+      ]
+    ),
+    new Project('Good Puppy',
+      'PC',
+      '1 Player',
+      'Woof! Woof! Which means… Owner out of the house, time to wreck things! Get to work and destroy as much as possible without getting caught. Your owner will come back periodically to check if everything is in order. If they catch you out of bed, prepare to lose your dinner.',
+      '<b>Key Features Developed:</b><br>'+
+      '<ul class="custom-list"><li>Player score management.</li>'+
+      '<li>Narrative sketch.</li>'+
+      '<li>Design and development of menus and UI.</li></ul>',
+      'Developed during the “Games Now! Game Jam – Spring 2024” over the course of a week, collaborating with teammates from various nationalities. <br>On a personal level, this was my first experience working with Unreal Engine.',
+      'https://anele-i.itch.io/good-puppy',
+      'Unreal Engine',
+      'Blueprints',
+      'Trello, Figma',
+      'assets/ProjectsImages/GoodPuppy/MainImage.png',
+      ['assets/ProjectsImages/GoodPuppy/LnftfP.png',
+        'assets/ProjectsImages/GoodPuppy/nq5CQW.png',
+        'assets/ProjectsImages/GoodPuppy/tksoYA.png',
+      ]
+    ),
+    new Project('Space QR',
+      'Android (Cardboard)',
+      '1 Player',
+      'Space Cadet, are you ready for training? Prepare your QRs, analyze the enemy and make sure to hit them with the projectile they’re asking for. But be careful—if you use the wrong color, you’ll receive negative points on your record. Prepare your weapons and launch into space!',
+      '<b>Key Features Developed:</b><br>'+
+      '<ul class="custom-list"><li>Selection system using head-gaze direction and a raycaster.</li>'+
+      '<li>Use of the “AR Marker Detector” package for QR code detection.</li>'+
+      '<li>Score and game time management.</li>'+
+      '<li>Implementation of the “Resonance Audio” API to produce stereo sound from targets, helping players locate them.</li>'+
+      '<li>Design and development of UI.</li></ul>',
+      'A mini-game developed during a Master’s course on Virtual Reality. This was my first experience integrating real-world elements, such as QR codes, into a game. <br>This game requires a cardboard-style headset, a mobile phone, and printed QR codes. By moving their head, players determine the direction in which they shoot. <br>When players see a projectile of a certain color, they must hold up the corresponding QR code in front of them to fire the correct projectile. The QRs are detected using the mobile phone’s rear camera.',
+      '',
+      'Unity',
+      'C#',
+      'VS Code, Photoshop',
+      'assets/ProjectsImages/SpaceShooting/MainImage.png',
+      ['assets/ProjectsImages/SpaceShooting/Imagen5.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen1.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen2.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen3.png',
+        'assets/ProjectsImages/SpaceShooting/Imagen4.png'
+      ]
+    )
+  ];
+
   getFormattedText(text:string){
     return text
   }

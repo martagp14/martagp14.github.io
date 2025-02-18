@@ -31,14 +31,16 @@ p {
   text-align: inherit;
 }
 
-.coverImage{
+.coverImage img{
   align-content: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 50rem;
-  width: auto;
+  height: auto;
+  width: 50rem !important;
   opacity: 60%;
+  margin: auto;
+  display: flex;
 }
 
 img {

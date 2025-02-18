@@ -9,16 +9,24 @@
         <div class="higherContainer">
           <div class="containerDataBox">
             <div class="dataBox">
-              <p><b>Título: </b>{{data.data.title}}</p>
+              <!-- <p><b>Título: </b>{{data.data.title}}</p>
               <p><b>Plataforma: </b>{{data.data.platform}}</p>
               <p><b>Número de jugadores: </b>{{data.data.numPlayers}}</p>
               <p><b>Motor de videojuegos: </b>{{data.data.engine}}</p>
               <p><b>Herramientas adicionales: </b>{{data.data.tools}}</p>
-              <p><b>Lenguajes de programación: </b>{{data.data.languages}}</p>
+              <p><b>Lenguajes de programación: </b>{{data.data.languages}}</p> -->
+              <p><b>Title: </b>{{data.data.title}}</p>
+              <p><b>Platform: </b>{{data.data.platform}}</p>
+              <p><b>Number of players: </b>{{data.data.numPlayers}}</p>
+              <p><b>Engine: </b>{{data.data.engine}}</p>
+              <p><b>Additional tools: </b>{{data.data.tools}}</p>
+              <p><b>Coding Languages: </b>{{data.data.languages}}</p>
             </div>
             <div class="dataBox">
-              <p><b>Sinopsis: </b>{{data.data.shortdescription}}</p>
-              <p *ngIf="data.data.urlToPlay!=''"><b>Pruébalo: </b><a [href]='data.data.urlToPlay' target="_blank">{{data.data.urlToPlay}}</a></p>
+              <!-- <p><b>Sinopsis: </b>{{data.data.shortdescription}}</p> -->
+              <p><b>Plot: </b>{{data.data.shortdescription}}</p>
+              <!-- <p *ngIf="data.data.urlToPlay!=''"><b>Pruébalo: </b><a [href]='data.data.urlToPlay' target="_blank">{{data.data.urlToPlay}}</a></p> -->
+              <p *ngIf="data.data.urlToPlay!=''"><b>Try it: </b><a [href]='data.data.urlToPlay' target="_blank">{{data.data.urlToPlay}}</a></p>
             </div>
           </div>
           <p class="dataText" [innerHTML]="data.data.keypoints"></p>
