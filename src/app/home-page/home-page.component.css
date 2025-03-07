@@ -1,105 +1,127 @@
 body {
-    margin: 0;
-    height: 100vh;  /* Ensure the body takes the full height of the screen */
-    overflow: hidden;  /* Hide the overflow when the character moves out of bounds */
-    position: relative;  /* Set relative positioning for the body to be the reference point for absolute positioning */
-  }
+  margin: 0;
+  height: 100vh;  /* Ensure the body takes the full height of the screen */
+  overflow: hidden;  /* Hide the overflow when the character moves out of bounds */
+  position: relative;  /* Set relative positioning for the body to be the reference point for absolute positioning */
+}
 
 .textBox{
-  background-color: white;
-  border: 2rem solid black;
+background-color: white;
+border: 2rem solid black;
 }
 
 .centerContent{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
+display: flex;
+align-content: center;
+justify-content: center;
+text-align: center;
 }
 
 .centerBlock{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 100%;
-  padding: 0%;
+display: flex;
+align-content: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: 100%;
+padding: 0%;
 }
 
 p {
-  text-align: inherit;
+text-align: inherit;
 }
-
+/* 
 .coverImage img{
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: auto;
-  width: 50rem !important;
-  opacity: 60%;
-  margin: auto;
-  display: flex;
+align-content: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+height: auto;
+width: 50rem !important;
+opacity: 60%;
+margin: auto;
+display: flex;
+} */
+
+/* img {
+height: 100%;
+} */
+
+.coverImage {
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
 }
 
-img {
-  height: 100%;
+.coverImage img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 60%;
 }
 
 
 /* Styling for each project window */
 .project-window {
-  background: #f0f0f0; /* Light background color for the window */
-  border-radius: 2px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  border: 3px, solid, black;
-  box-shadow: 0 4px 8px var(--color-dark-purple);
-  margin-top: 10%;
-  margin: 5%;
-  width: 60%;
+background: #f0f0f0; /* Light background color for the window */
+border-radius: 2px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+border: 3px, solid, black;
+box-shadow: 0 4px 8px var(--color-dark-purple);
+margin-top: 10%;
+margin: 5%;
+width: 60%;
 }
 
 /* Window header */
 .window-header {
-  background-color: var(--color-dark-purple);
-  color: black;
-  padding: 0px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  border: 0px, solid, black;
-  border-width: 0px 0px 3px 0px;
+background-color: var(--color-dark-purple);
+color: black;
+padding: 0px 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+border: 0px, solid, black;
+border-width: 0px 0px 3px 0px;
 }
 
 /* Title in the window header */
 .window-title {
-  font-size: 1.1em;
+font-size: 1.1em;
 }
 
 /* Close button (×) */
 .close-btn {
-  font-size: 1.5em;
-  font-weight: 600;
-  border: 0px, solid, black;
-  border-width: 0px 0px 0px 3px;
-  padding-left: 10px;
-  .icon {
-      transform: scale(1.2);
-      margin-top: 35%;
-  }
+font-size: 1.5em;
+font-weight: 600;
+border: 0px, solid, black;
+border-width: 0px 0px 0px 3px;
+padding-left: 10px;
+.icon {
+    transform: scale(1.2);
+    margin-top: 35%;
+}
 }
 
 /* Styling for the window content */
 .window-content {
-  padding: 15px;
-  background-color: white;
-  color: #333;
+padding: 15px;
+background-color: white;
+color: #333;
 }
 
 .window-content p {
-  margin: 0; 
+margin: 0; 
+}
+
+@media (min-width: 1080px) {
+.coverImage img {
+  width: 50rem;
+}
 }
